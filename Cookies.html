@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="cookies.css">
+  </head>
+  <body>
+    <h1> Cookie Confectionary </h1>
+
+    <Button id="sugarCookie"> EAT SUGAR COOKIE</Button>
+    <button id="chocolateCookie"> EAT CHOCOLATE COOKIE</Button>
+    <Button id="lemonCookie"> EAT LEMON COOKIE</Button>
+
+<script src ="Cookies.min.js"></script>
+<script src ="cookies.js"></script>
+
+<script>
+  function updateChocolateCookie() {
+    var cookieCount = Cookies.get("chocolateCookie");
+    if (cookieCount === undefined) {
+      Cookies.set("chocolateCookie", 1);
+    } else {
+      cookieCount = parseInt(cookieCount);
+      Cookies.set("chocolateCookie", cookieCount + 1);
+    }
+
+  }
+document.getElementById("chocolateCookie").addEventListener("click", updateChocolateCookie);
+
+</script>
+
+<script>
+  function updateSugarCookie() {
+    var cookieCount = Cookies.get("sugarCookie");
+    if (cookieCount === undefined) {
+      Cookies.set("sugarCookie", 1);
+    } else {
+      cookieCount = parseInt(cookieCount);
+      Cookies.set("sugarCookie", cookieCount + 1);
+    }
+
+  }
+
+document.getElementById("sugarCookie").addEventListener("click", updateSugarCookie);
+
+</script>
+
+<script>
+  function updateLemonCookie() {
+    var cookieCount = Cookies.get("lemonCookie");
+    if (cookieCount === undefined) {
+      Cookies.set("lemonCookie", 1);
+    } else {
+      cookieCount = parseInt(cookieCount);
+      Cookies.set("lemonCookie", cookieCount + 1);
+    }
+
+  }
+
+document.getElementById("lemonCookie").addEventListener("click", updateLemonCookie);
+
+
+</script>
+
+  </body>
+</html>

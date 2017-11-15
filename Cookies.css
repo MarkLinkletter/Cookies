@@ -1,0 +1,37 @@
+h1{
+  font-family: "bebas";
+  text-align: center;
+  font-size: 45px;
+}
+
+
+button{
+style: inline-block;
+width: 100px;
+height: 100px;
+margin-left: 100px;
+margin-right: 210px;
+align-content: center;
+
+}
+
+#chocolateCookie{
+color: aqua;
+font-family: "bebas";
+background-color: black;
+font-size: 16px;
+}
+
+#sugarCookie{
+  color: hotpink;
+  font-family: "bebas";
+  background-color: black;
+  font-size: 18px;
+
+}
+#lemonCookie{
+  color: yellow;
+  font-family: "bebas";
+  background-color: black;
+  font-size: 18px;
+}
